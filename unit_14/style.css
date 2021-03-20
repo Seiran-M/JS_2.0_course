@@ -1,0 +1,35 @@
+.text-center {
+    text-align: center;
+}
+
+.weather-widget{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    background-color: #81fa8e;
+    border-radius: 10px;
+    padding: 30px 0;
+
+}
+.city-wrapper{
+    font-size: 24px;
+}
+.city-name{
+    font-weight: 700;
+}
+.weather-degrees{
+    font-size: 34px;
+    margin: 15px 0;
+    font-weight: 700;
+
+}
+
+.select{
+    width: 70%;
+}
+
+.wind{
+    margin-bottom: 20px;
+}
