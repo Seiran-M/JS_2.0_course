@@ -88,9 +88,7 @@ const f4 = () => {
         console.log(true)
     } else console.log(false)
     input.value = '';
-
 }
-
 
 document.querySelector('.b-4').onclick = f4;
 
@@ -211,11 +209,15 @@ document.querySelector('.b-11').onclick = f11;
 let str12 = 'The name conjures up visions of plum pudding and Christmas punch quaint coaching inns and cozy firesides but also of orphaned and starving children';
 
 const f12 = () => {
-
+    const newArr = str12.split('')
+    const set =  new Set(newArr)
+    return(
+      set
+    )
 }
 
 document.querySelector('.b-12').onclick = () => {
-    console.log(f12());
+    console.log(f12())
 }
 
 // Task 13
@@ -227,9 +229,23 @@ let str13 = 'The name conjures up visions of plum pudding and Christmas punch qu
 
 
 const f13 = () => {
+    const newArr = str13.split('')
+    const set =  new Set(newArr)
+    let count = 0;
+    let obj = {};
 
-    // return
-}
+    for (let i of set) {
+        count = 0;
+        for (let k=0; k<newArr.length; k++){
+            if(i ===newArr[k])
+                count++
+        }
+        obj[i] = count
+    }
+    return obj;
+};
+
+
 
 document.querySelector('.b-13').onclick = () => {
     console.log(f13());
